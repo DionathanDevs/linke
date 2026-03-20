@@ -7,6 +7,9 @@ const viewsRoutes = require('./routes/viewsRoutes');
 
 const app = express();
 
+// Trust reverse proxies (Render, Heroku, etc) so rate limiting uses the correct client IP, not the load balancer IP.
+app.set('trust proxy', 1);
+
 // Security middlewares
 app.use(helmet());
 app.use(helmet.hidePoweredBy()); // Explicitly hide X-Powered-By
