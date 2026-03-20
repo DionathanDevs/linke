@@ -42,8 +42,8 @@ body::before {
   right: -15px;
   bottom: -15px;
   z-index: -1;
-  /* Coloque a URL da SUA IMAGEM aqui */
-  background-image: url('../src/images/background.jpg');
+  /* Coloque a URL da SUA IMAGEM aqui - Caminho da pasta public */
+  background-image: url('/images/background.jpg');
   background-size: cover;
   background-position: center;
   /* filter resolve o problema: blur desfoca, brightness escurece (deixa fosco) */

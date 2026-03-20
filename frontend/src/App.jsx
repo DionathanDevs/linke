@@ -53,7 +53,7 @@ function App() {
             <header className="profile-section">
                 {/* Using a placeholder avatar, replace src with your actual image */}
                 <img
-                    src="../src/images/perfil.jpeg"
+                    src="/images/perfil.jpeg"
                     alt="Profile Avatar"
                     className="profile-img"
                 />
